@@ -2,8 +2,7 @@
 Documentation   Suite de Teste do cadastro de personagens na API da Marvel
 Resource        ${EXECDIR}/resources/Base.robot
 Library         ${EXECDIR}/resources/factories/Guardians.py
-Suite Setup     Run Keywords    Set Client Key     jefferson1290@gmail.com
-...             AND             Back To The Past
+Suite Setup     Super Setup     jefferson1290@gmail.com
 
 *Test Cases*
 Deve cadastrar um personagem

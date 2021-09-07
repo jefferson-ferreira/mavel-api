@@ -24,3 +24,15 @@ def factory_deadpool():
 	    "active": True
 
     }
+
+def factory_falcao():
+
+    return {
+
+	    "name": "Sam Wilson",
+	    "aliases": "Falção",
+	    "age": 40,
+	    "team": "Vingador",
+	    "active": True
+
+    }

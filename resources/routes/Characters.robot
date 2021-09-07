@@ -13,3 +13,13 @@ POST New Character
     ...                 expected_status=any
 
     [return]            ${response}
+
+GET Character By ID
+    [Arguments]         ${character_id}
+
+    ${response}         GET
+    ...                 ${BASE_URI}/characters/${character_id}
+    ...                 headers=${HEADERS}
+    ...                 expected_status=any
+
+    [return]            ${response}

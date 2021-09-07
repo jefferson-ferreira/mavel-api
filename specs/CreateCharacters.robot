@@ -14,6 +14,7 @@ Deve cadastrar um personagem
     Status Should Be   200                      ${response}
 
 Não deve cadastrar com o mesmo nome
+    [Tags]      dup
 
     # Dado que Thanos já exista na aplicação
 

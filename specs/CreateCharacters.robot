@@ -2,11 +2,12 @@
 Documentation   Suite de Teste do cadastro de personagens na API da Marvel
 Resource        ${EXECDIR}/resources/Base.robot
 Library         ${EXECDIR}/resources/factories/Thanos.py
+Library         ${EXECDIR}/resources/factories/Deadpool.py
+Suite Setup     Run Keywords    Set Client Key     jefferson1290@gmail.com
+...             AND             Back To The Past
 
 *Test Cases*
 Deve cadastrar um personagem
-
-    Set Client Key     jefferson1290@gmail.com
 
     &{personagem}      Factory Thanos
 
@@ -18,7 +19,7 @@ Não deve cadastrar com o mesmo nome
 
     # Dado que Thanos já exista na aplicação
 
-    ${personagem}       Factory Thanos
+    ${personagem}       Factory Deadpool
 
     POST New Character  ${personagem}
 

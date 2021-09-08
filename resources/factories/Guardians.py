@@ -36,3 +36,15 @@ def factory_falcao():
 	    "active": True
 
     }
+
+def factory_hulk():
+
+    return {
+
+	    "name": "Bruce Banner",
+	    "aliases": "Hulk",
+	    "age": 45,
+	    "team": "Vingador",
+	    "active": True
+
+    }

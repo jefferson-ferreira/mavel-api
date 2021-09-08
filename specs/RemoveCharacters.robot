@@ -20,7 +20,7 @@ Deve excluir um personagem pelo ID
 
     Status Should Be    404                         ${response2}
 
-Não deve excluir um personagem pelo Id
+Não deve encontrar personagem pelo Id já excluído
 
     ${personagem_id}       Get Unique Id
     ${response}            DELETE Character By ID   ${personagem_id}

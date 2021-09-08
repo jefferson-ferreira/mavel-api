@@ -1,3 +1,4 @@
 logs
 resources/factories/__pycache__/
+resources/__pycache__
 *.DS_Store

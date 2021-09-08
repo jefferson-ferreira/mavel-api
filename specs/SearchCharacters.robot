@@ -19,5 +19,11 @@ Deve buscar um personagem pelo ID
     Should Be Equal     ${falcao.json()}[aliases]   ${personagem}[aliases]
     Should Be Equal     ${falcao.json()}[age]       ${personagem}[age]
     Should Be Equal     ${falcao.json()}[team]      ${personagem}[team]
-    Should Be Equal     ${falcao.json()}[active]    ${personagem}[active]    
+    Should Be Equal     ${falcao.json()}[active]    ${personagem}[active]
 
+Não deve retornar o personagem pelo Id
+
+    ${personagem_id}       Get Unique Id
+    ${response}            GET Character By ID      ${personagem_id}
+
+    Status Should Be       404                      ${response}
